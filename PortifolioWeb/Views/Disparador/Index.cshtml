@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    @{
+
+        try
+        {
+
+
+
+            WebMail.SmtpServer = System.Configuration.ConfigurationManager.AppSettings["Svr"];
+            WebMail.SmtpPort = Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["Prt"]);
+            WebMail.EnableSsl = true;
+            WebMail.SmtpUseDefaultCredentials = true;
+            WebMail.UserName = System.Configuration.ConfigurationManager.AppSettings["Address"];
+            WebMail.Password = System.Configuration.ConfigurationManager.AppSettings["Psw"];
+            WebMail.From = System.Configuration.ConfigurationManager.AppSettings["Address"];
+            WebMail.Send(to: System.Configuration.ConfigurationManager.AppSettings["Address"], subject: "Contato", body: "Teste de envio de mensagem.");
+
+
+            <h2 class="text-center">Email enviado com sucesso.</h2>
+        }
+        catch (Exception ex)
+        {
+
+            <p>@ex</p>
+        }
+
+
+
+
+
+
+    }
+
+
+
+</div>
+
+
+

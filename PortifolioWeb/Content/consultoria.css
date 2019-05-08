@@ -1,0 +1,157 @@
+
+#Rodape {
+    width: 100%;
+    margin: 0;
+    height: 240px;
+    background-image: url('img-cst/Rodape.png');
+}
+
+.ti {
+    width: 20px;
+    height: 20px;
+    float: left; 
+}
+
+.Margem {
+    padding: 10px;
+    background: #464753;
+    font-family: verdana,arial,tahoma;
+    font-weight: 9;
+    color: black;
+}
+
+
+#um {
+    width: 900px;
+    height: 500px;
+    margin: 0;
+    background: url(img-cst/Globo-md.jpg) no-repeat;
+}
+
+@media (max-width:960px) {
+    #um {
+        width: 450px;
+        height: 500px;
+        margin: 0;
+        background: url(img-cst/Globo-sm.jpg) no-repeat;
+    }
+}
+
+@media (min-width:480px) {
+    #um {
+        width: 100%;
+        margin: 0;
+        height: 500px;
+        background: url(img-cst/Globo.jpg) no-repeat;
+    }
+}
+
+
+#dois {
+    width: 900px;
+    height: 500px;
+    margin: 0;
+    background: url(img-cst/Otimizacao-md.jpg) no-repeat;
+}
+
+@media (max-width:960px) {
+    #dois {
+        width: 450px;
+        height: 500px;
+        margin: 0;
+        background: url(img-cst/Otimizacao-sm.jpg) no-repeat;
+    }
+}
+
+@media (min-width:480px) {
+    #dois {
+        width: 100%;
+        margin: 0;
+        height: 500px;
+        background: url(img-cst/Otimizacao.jpg) no-repeat;
+    }
+}
+
+#tres {
+    width: 900px;
+    height: 500px;
+    margin: 0;
+    background: url(img-cst/Suporte-md.jpg) no-repeat;
+}
+
+@media (max-width:960px) {
+    #tres {
+        width: 450px;
+        height: 500px;
+        margin: 0;
+        background: url(img-cst/Suporte-sm.jpg) no-repeat;
+    }
+}
+
+@media (min-width:480px) {
+    #tres {
+        width: 100%;
+        margin: 0;
+        height: 500px;
+        background: url(img-cst/Suporte.jpg) no-repeat;
+    }
+}
+
+#form_contato {
+    padding-top: 100px;
+}
+
+#quatro {
+    width: 100%;
+    margin: 0;
+    height: 500px;
+    background: url(img-cst/Mulher.jpg) no-repeat;
+    background-position: center;
+}
+
+@media (max-width:1300px) {
+    #quatro {
+        width: 1300px;
+        margin: 0;
+        height: 500px;
+        background: url(img-cst/Mulher.jpg) no-repeat;
+        background-position: center;
+    }
+}
+
+@media (max-width:1000px) {
+    #quatro {
+        width: 100%;
+        margin: 0;
+        height: 500px;
+        background: url(img-cst/Mulher-normal.jpg) no-repeat;
+        background-position: center;
+    }
+}
+
+@media (max-width:800px) {
+    #quatro {
+        width: 800px;
+        height: 500px;
+        margin: 0;
+        background: url(img-cst/Mulher-md.jpg) no-repeat;
+    }
+}
+
+@media (max-width:600px) {
+    #quatro {
+        width: 599px;
+        height: 500px;
+        margin: 0;
+        background: url(img-cst/Mulher-md.jpg) no-repeat;
+    }
+}
+
+@media (max-width:499px) {
+    #quatro {
+        width: 500px;
+        height: 500px;
+        margin: 0;
+        background: url(img-cst/Mulher-sm.jpg) no-repeat;
+    }
+}

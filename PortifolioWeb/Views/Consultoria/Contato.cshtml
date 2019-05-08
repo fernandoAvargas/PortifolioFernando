@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Contato";
+    Layout = "~/Views/Shared/_LayoutCst.cshtml";
+}
+
+<div class="container-fluid">
+
+    <div class="col-md-6 col-md-offset-3">
+
+        <br><br><br><br><br>
+
+        <div class="h3 text-center label-info img-rounded">CONTATO</div>
+        <br>
+
+        <form id="form-contato" method="post" data-toggle="validator" role="form">
+            <div class="form-group">
+                <label for="textNome" class="control-label">Nome</label>
+                <input id="textNome" name="Nome" class="form-control" placeholder="Digite seu Nome..." type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label for="inputEmail" class="control-label">Email</label>
+                <input id="inputEmail" name="Email" class="form-control" placeholder="Digite seu E-mail" type="email" required>
+            </div>
+            <div class="form-group">
+                <label for="select" class="control-label">Assunto</label>
+                <select class="form-control" name="assunto">
+
+                    <option>ORÇAMENTO</option>
+                    <option value="ELOGIO">ELOGIO</option>
+                    <option value="SUGESTÃO">SUGESTÃO</option>
+                    <option value="RECLAMAÇÃO">RECLAMAÇÃO</option>
+                    <option value="DÚVIDA">DÚVIDA</option>
+                    <option value="SOLICITAÇÃO">SOLICITAÇÃO</option>
+                    <option value="OUTRO">OUTRO</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="inputMsg" class="control-label">Mensagem</label>
+                <textarea rows="5" id="inputEmail" name="Mensagem" class="form-control" placeholder="Digite a Mensagem" required></textarea>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="Naosourobo" required> Não sou um robô.
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary center-block">Enviar</button>
+            <br><br>
+        </form>
+
+    </div>
+
+</div>
+   

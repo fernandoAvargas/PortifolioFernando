@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Lgn";
+    Layout = "~/Views/Shared/_LayoutConfig.cshtml";
+
+}
+
+<div id="palco_lgn">
+
+    <div class="panel-body">
+        <div class="row">
+
+            <form class="col-sm-4 col-sm-offset-4  col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 jumbotron" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Usuário:">
+                    <br>
+                    <input type="password" class="form-control" placeholder="Senha:">
+                </div>
+                <button type="submit" class="btn btn-default">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <hr class="hr" />
+    <footer style="color:#cecaca;" class="text-center">
+        <div class="footer-col">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Localização</h3>
+                        <p>
+                            Centro - Nova Iguaçu
+                            <br>Rio de Janeiro - Brasil
+                        </p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Contatos</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/Portif%C3%B3lio-1937140806497504/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:fernando.avargas.fv@gmail.com" class="btn-social btn-outline"><i class="fa fa-fw fa-mail-forward"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://br.linkedin.com/in/fernanassis" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+
+                                <a href="~/Paginas/Skype/skype.html" class="btn-social btn-outline"><i class="fa fa-fw fa-skype"></i></a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Sobre</h3>
+                        <p>
+                            Analista Desenvolvedor de Sistemas
+                            <br>
+                            <div class="text-capitalize">Certificação: MVC70-486 ASP.NET MVC4</div>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &copy; @DateTime.Now.Year - Profissional Certificado com mais de Quinze Anos de Experiencia
+    </footer>
+
+</div>
+
